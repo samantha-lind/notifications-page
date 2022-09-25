@@ -74,5 +74,5 @@ adding a transparent border to the original.
 
 -   Website - [Samantha Lind](https://www.samanthalind.net)
 -   Frontend Mentor -
-    [@ysamantha-lind](https://www.frontendmentor.io/profile/samantha-lind)
+    [@samantha-lind](https://www.frontendmentor.io/profile/samantha-lind)
 -   GitHub - [@samantha-lind](https://www.github.com/samantha-lind)
