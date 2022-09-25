@@ -176,11 +176,7 @@
                     event.preventDefault;
                     not.classList.remove("new");
                     not.removeEventListener("click", handler);
-
-                    if (counter > 0) {
-                        document.getElementById("count").innerHTML =
-                            counter -= 1;
-                    }
+                    document.getElementById("count").innerHTML = counter -= 1;
                 });
             });
         </script>
