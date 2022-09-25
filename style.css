@@ -1,0 +1,168 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+    background-color: white;
+    width: 50vw;
+    border-radius: 15px;
+    margin: 50px;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.02);
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px;
+}
+
+.notification-count {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+}
+
+.date {
+    display: block;
+    color: hsl(219, 14%, 63%);
+    padding-top: 8px;
+}
+
+.notification {
+    padding: 15px;
+    margin: 10px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    display: flex;
+    flex-direction: row;
+}
+
+.user-name {
+    color: hsl(224, 21%, 14%);
+}
+
+.user-name:hover,
+.post:hover,
+.group:hover,
+.mark-all:hover {
+    cursor: pointer;
+    color: #09317b;
+}
+
+.post {
+    color: hsl(219, 14%, 63%);
+}
+
+.group {
+    color: #09317b;
+}
+
+.post,
+.user-name,
+.group {
+    font-weight: 800;
+}
+
+footer {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.profile-picture {
+    border-radius: 25px;
+    max-width: 50px;
+    vertical-align: middle;
+}
+
+.image {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.text {
+    display: inline-block;
+    width: 40vw;
+    padding-left: 50px;
+}
+
+.message {
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.message:hover {
+    background-color: hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+
+.new {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.new .fa-circle {
+    display: inline-block;
+}
+
+.new:hover {
+    cursor: pointer;
+}
+
+.fa-circle {
+    color: red;
+    font-size: 8px;
+    vertical-align: middle;
+    padding-left: 3px;
+    display: none;
+}
+.picture-comment {
+    margin-left: auto;
+}
+
+.picture-comment img {
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px outset transparent;
+    padding: 1px;
+}
+
+.picture-comment img:hover {
+    cursor: pointer;
+    border: 1px solid hsl(211, 68%, 94%);
+    border-radius: 5px;
+}
+
+#count {
+    margin-left: 10px;
+    padding: 3px 8px;
+    font-size: 16px;
+    color: white;
+    background-color: #09317b;
+    border-radius: 5px;
+}
+
+@media (prefers-reduced-motion) {
+    body {
+        transition: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-wrapper {
+        min-width: 100vw;
+        margin-top: 0;
+    }
+}
