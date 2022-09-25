@@ -58,6 +58,10 @@ h1 {
     color: hsl(224, 21%, 14%);
 }
 
+.mark-all {
+    color: hsl(219, 14%, 63%);
+}
+
 .user-name:hover,
 .post:hover,
 .group:hover,
@@ -67,7 +71,7 @@ h1 {
 }
 
 .post {
-    color: hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
 }
 
 .group {
