@@ -64,6 +64,9 @@ been set in:
 Adding a border on hover may make an image shift by a few pixels. Avoid this by
 adding a transparent border to the original.
 
+Use textContent instead of innerHTML as it's much quicker and lighter for the
+browser to process
+
 ### Useful resources
 
 -   [Flex alignment](https://www.smashingmagazine.com/2018/08/flexbox-alignment/) -
