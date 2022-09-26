@@ -159,16 +159,16 @@
             <a href="https://github.com/samantha-lind">Samantha Lind</a>.
         </footer>
         <script>
-            var notification = document.querySelectorAll(".new");
-            var markAll = document.querySelector(".mark-all");
-            var counter = 3;
+            const notification = document.querySelectorAll(".new");
+            const markAll = document.querySelector(".mark-all");
+            let counter = 3;
 
             markAll.addEventListener("click", function (event) {
                 event.preventDefault;
                 notification.forEach((not) => {
                     not.classList.remove("new");
                 });
-                document.getElementById("count").innerHTML = "0";
+                document.getElementById("count").textContent = "0";
             });
 
             notification.forEach((not) => {
@@ -176,7 +176,7 @@
                     event.preventDefault;
                     not.classList.remove("new");
                     not.removeEventListener("click", handler);
-                    document.getElementById("count").innerHTML = counter -= 1;
+                    document.getElementById("count").textContent = counter -= 1;
                 });
             });
         </script>
