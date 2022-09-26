@@ -163,8 +163,7 @@
             const markAll = document.querySelector(".mark-all");
             let counter = 3;
 
-            markAll.addEventListener("click", function (event) {
-                event.preventDefault;
+            markAll.addEventListener("click", function () {
                 notification.forEach((not) => {
                     not.classList.remove("new");
                 });
@@ -172,8 +171,7 @@
             });
 
             notification.forEach((not) => {
-                not.addEventListener("click", function handler(event) {
-                    event.preventDefault;
+                not.addEventListener("click", function handler() {
                     not.classList.remove("new");
                     not.removeEventListener("click", handler);
                     document.getElementById("count").textContent = counter -= 1;
